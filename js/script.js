@@ -11,3 +11,33 @@
 // Consigli del giorno
 // Scriviamo sempre in italiano i passaggi che vogliamo fare
 // Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+
+
+
+let parola = prompt("Inserisci una parola");
+
+function palindroma(parolaInser){
+    
+    let parolaScomposta = parolaInser.split("");
+
+    
+    let inversoScomposto =  parolaScomposta.reverse()
+
+   
+    let parolaRicomposta = inversoScomposto.join("");
+
+
+    
+  
+    let parolaPalindroma;
+    if ( parolaInser === parolaRicomposta ) {
+        parolaPalindroma = "la parola inserita è palindroma";
+    } else{
+        parolaPalindroma = "la parola inserita non è palindroma"
+    }
+        return parolaPalindroma;
+}
+
+let veroFalso = palindroma(parola);
+console.log(veroFalso);
+    
